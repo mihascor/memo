@@ -10,7 +10,7 @@ import '@/styles/globals.css'
 
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
 })
 
 const baseUrl = Settings.metadataBase
@@ -53,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru" suppressHydrationWarning>
       {Settings.gtmconnected && <GoogleTagManager gtmId={Settings.gtm} />}
       <body className={`${inter.variable} font-regular`}>
         <Providers>

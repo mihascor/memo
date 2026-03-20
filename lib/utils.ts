@@ -300,7 +300,7 @@ function chunkArray<T>(array: T[], chunkSize: number): T[][] {
 function formatDateHelper(dateStr: string, options: Intl.DateTimeFormatOptions): string {
   const [day, month, year] = dateStr.split('-').map(Number)
   const date = new Date(year, month - 1, day)
-  return date.toLocaleDateString('en-US', options)
+  return date.toLocaleDateString('ru-RU', options)
 }
 
 export function formatDate(dateStr: string): string {

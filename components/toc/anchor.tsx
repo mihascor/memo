@@ -26,7 +26,7 @@ export function TableAnchor({ tocs }: TableAnchorProps) {
 
   return (
     <div className="flex w-full flex-col gap-3 pl-2">
-      <h3 className="text-sm font-semibold">On this page</h3>
+      <h3 className="text-sm font-semibold">На странице</h3>
       <ScrollArea className="pt-0.5 pb-4">
         <div className="flex flex-col gap-2.5 text-sm text-foreground">
           {tocs.map(({ href, level, text }) => (

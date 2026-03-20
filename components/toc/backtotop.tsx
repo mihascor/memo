@@ -31,13 +31,13 @@ export function BackToTop(): ReactElement {
     <button
       ref={ref}
       onClick={ScrollUp}
-      title="Scroll to top"
-      aria-label="Scroll to top"
+      title="Вверх"
+      aria-label="Вверх"
       type="button"
       className="mt-6 ml-2 flex cursor-pointer items-center self-start text-sm text-foreground opacity-0 transition"
     >
       <LuArrowUp className="mr-1 inline-block h-4 w-4 align-middle" />
-      <span>Scroll to top</span>
+      <span>Вверх</span>
     </button>
   )
 }
