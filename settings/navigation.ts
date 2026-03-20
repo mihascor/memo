@@ -2,14 +2,14 @@ import { PageRoutes } from '@/lib/pageroutes'
 
 export const Navigations = [
   {
-    title: 'Docs',
+    title: '➜ 🚶‍➡️ 👍',
     href: `/docs${PageRoutes[0].href}`,
   },
-  {
-    title: 'Rubix',
-    href: 'https://rubixstudios.com.au',
-    external: true,
-  },
+  // {
+  //   title: 'Rubix',
+  //   href: 'https://rubixstudios.com.au',
+  //   external: true,
+  // },
 ]
 
 export const GitHubLink = {

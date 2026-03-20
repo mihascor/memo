@@ -241,17 +241,17 @@
     "slug": "/markdown/lists",
     "title": "Lists",
     "description": "This section provides an overview of creating and using lists in the Documents boilerplate.",
-    "content": "Learn how to create and render different types of lists in the Documents boilerplate. Examples include checklists, ordered lists, unordered lists and nested lists.\n\n## Checklist\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n```jsx\n- [x] Write the press release\r\n- [ ] Update the website\r\n- [ ] Contact the media\n```\n\n## Simple List\n\n* Item 1\n* Item 2\n* Item 3\n\n```jsx\n- Item 1\r\n- Item 2\r\n- Item 3\n```\n\n## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n\n```jsx\n1. Research\r\n2. Draft the content\r\n3. Review and edit\r\n4. Publish\n```\n\n## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2\n\n```jsx\n- Main Category 1\r\n  - Sub Item 1.1\r\n  - Sub Item 1.2\r\n- Main Category 2\r\n  - Sub Item 2.1\r\n  - Sub Item 2.2\n```\n\nUse these examples as a foundation to create and customize lists that fit your project's needs.\n",
+    "content": "Learn how to create and render different types of lists in the Documents boilerplate. Examples include checklists, ordered lists, unordered lists and nested lists.\n\n## Чек-лист\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n```jsx\n- [x] Write the press release\r\n- [ ] Update the website\r\n- [ ] Contact the media\n```\n\n## Simple List\n\n* Item 1\n* Item 2\n* Item 3\n\n```jsx\n- Item 1\r\n- Item 2\r\n- Item 3\n```\n\n## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n\n```jsx\n1. Research\r\n2. Draft the content\r\n3. Review and edit\r\n4. Publish\n```\n\n## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2\n\n```jsx\n- Main Category 1\r\n  - Sub Item 1.1\r\n  - Sub Item 1.2\r\n- Main Category 2\r\n  - Sub Item 2.1\r\n  - Sub Item 2.2\n```\n\nUse these examples as a foundation to create and customize lists that fit your project's needs.\n",
     "_searchMeta": {
-      "cleanContent": "learn how to create and render different types of lists in the documents boilerplate examples include checklists ordered lists unordered lists and nested lists checklist x write the press release update the website contact the media simple list item 1 item 2 item 3 number list research draft the content review and edit publish nested list main category 1 sub item 1 1 sub item 1 2 main category 2 sub item 2 1 sub item 2 2 use these examples as a foundation to create and customize lists that fit your project s needs",
+      "cleanContent": "learn how to create and render different types of lists in the documents boilerplate examples include checklists ordered lists unordered lists and nested lists - x write the press release update the website contact the media simple list item 1 item 2 item 3 number list research draft the content review and edit publish nested list main category 1 sub item 1 1 sub item 1 2 main category 2 sub item 2 1 sub item 2 2 use these examples as a foundation to create and customize lists that fit your project s needs",
       "headings": [
-        "Checklist",
+        "Чек-лист",
         "Simple List",
         "Number List",
         "Nested List"
       ],
       "keywords": [
-        "Checklist",
+        "Чек-лист",
         "Simple List",
         "Number List",
         "Nested List",
