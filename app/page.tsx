@@ -5,9 +5,9 @@ import { PageRoutes } from '@/lib/pageroutes'
 export default function Home() {
   return (
     <section className="flex min-h-[86.5vh] flex-col items-center justify-center px-2 py-8 text-center">
-      <h1 className="mb-4 text-4xl font-bold sm:text-7xl">Памятка</h1>
+      <h1 className="mb-4 text-4xl font-bold sm:text-7xl">ПАМЯТКА</h1>
       <p className="mb-8 max-w-150 text-foreground sm:text-base">
-        Напишу описание.
+        Памятка для проживающих на планете Земля
       </p>
 
       <div className="flex items-center gap-5">
@@ -15,7 +15,7 @@ export default function Home() {
           href={`/docs${PageRoutes[0].href}`}
           className={buttonVariants({ className: 'px-6', size: 'lg' })}
         >
-          Вперёд
+          Начало
         </Link>
       </div>
     </section>

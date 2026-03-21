@@ -8,7 +8,7 @@ type NavigationItem = {
 
 export const Navigations: NavigationItem[] = [
   {
-    title: 'Вперёд',
+    title: 'Начало',
     href: `/docs${PageRoutes[0].href}`,
   },
   // {
@@ -19,5 +19,5 @@ export const Navigations: NavigationItem[] = [
 ]
 
 export const GitHubLink = {
-  href: 'https://github.com/rubixvi/rubix-documents',
+  href: 'https://github.com/mihascor/memo',
 }

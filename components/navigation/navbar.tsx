@@ -27,7 +27,7 @@ export function Navbar() {
       <div className="flex items-center gap-2">
         <Search />
         <div className="flex gap-2 sm:ml-0">
-          {GitHubLink.href && (
+          {/* {GitHubLink.href && (
             <Link
               href={GitHubLink.href}
               className={buttonVariants({ variant: 'outline', size: 'icon' })}
@@ -38,7 +38,7 @@ export function Navbar() {
             >
               <LuGithub className="h-[1.1rem] w-[1.1rem]" />
             </Link>
-          )}
+          )} */}
           <ModeToggle />
         </div>
       </div>
