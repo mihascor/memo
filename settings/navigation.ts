@@ -8,7 +8,7 @@ type NavigationItem = {
 
 export const Navigations: NavigationItem[] = [
   {
-    title: 'Начало',
+    title: 'Главная',
     href: `/docs${PageRoutes[0].href}`,
   },
   // {
