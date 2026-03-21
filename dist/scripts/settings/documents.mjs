@@ -1,7 +1,7 @@
 export const Documents = [
     {
         heading: 'Introduction',
-        title: 'Basic Setup',
+        title: 'Вводная часть',
         href: '/basic-setup',
         items: [
             {

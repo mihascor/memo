@@ -14,6 +14,15 @@ import {
 import { PageRoutes } from '@/lib/pageroutes'
 import { toTitleCase } from '@/utils/toTitleCase'
 
+const breadcrumbLabels: Record<string, string> = {
+  // Примеры. Потом заменишь на свои папки и свои русские названия.
+  'basic-setup': 'Вводная часть',
+  'setup': 'Установка',
+  'nastroika': 'Настройка',
+  'struktura-saita': 'Структура сайта',
+}
+const getBreadcrumbLabel = (path: string) => breadcrumbLabels[path] || toTitleCase(path)
+
 export function ArticleBreadcrumb({ paths }: { paths: string[] }) {
   return (
     <div className="pb-5">
@@ -22,8 +31,8 @@ export function ArticleBreadcrumb({ paths }: { paths: string[] }) {
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
               <Link
-                title="Documentation Home"
-                aria-label="Documentation Home"
+                title="Домой"
+                aria-label="Домой"
                 href={`/docs${PageRoutes[0].href}`}
               >
                 <LuHouse className="h-4" />
@@ -37,11 +46,11 @@ export function ArticleBreadcrumb({ paths }: { paths: string[] }) {
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
                   <Link
-                    title={toTitleCase(paths[0])}
-                    aria-label={toTitleCase(paths[0])}
+                    title={getBreadcrumbLabel(paths[0])}
+                    aria-label={getBreadcrumbLabel(paths[0])}
                     href={`/docs/${paths[0]}`}
                   >
-                    {toTitleCase(paths[0])}
+                    {getBreadcrumbLabel(paths[0])}
                   </Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -62,15 +71,15 @@ export function ArticleBreadcrumb({ paths }: { paths: string[] }) {
                       {index < paths.length - 1 ? (
                         <BreadcrumbLink asChild>
                           <Link
-                            title={toTitleCase(path)}
-                            aria-label={toTitleCase(path)}
+                            title={getBreadcrumbLabel(path)}
+                            aria-label={getBreadcrumbLabel(path)}
                             href={href}
                           >
-                            {toTitleCase(path)}
+                            {getBreadcrumbLabel(path)}
                           </Link>
                         </BreadcrumbLink>
                       ) : (
-                        <BreadcrumbPage className="b">{toTitleCase(path)}</BreadcrumbPage>
+                        <BreadcrumbPage className="b">{getBreadcrumbLabel(path)}</BreadcrumbPage>
                       )}
                     </BreadcrumbItem>
                   </Fragment>
@@ -87,12 +96,16 @@ export function ArticleBreadcrumb({ paths }: { paths: string[] }) {
                   <BreadcrumbItem>
                     {index < paths.length - 1 ? (
                       <BreadcrumbLink asChild>
-                        <Link title={toTitleCase(path)} aria-label={toTitleCase(path)} href={href}>
-                          {toTitleCase(path)}
+                        <Link
+                          title={getBreadcrumbLabel(path)}
+                          aria-label={getBreadcrumbLabel(path)}
+                          href={href}
+                        >
+                          {getBreadcrumbLabel(path)}
                         </Link>
                       </BreadcrumbLink>
                     ) : (
-                      <BreadcrumbPage className="b">{toTitleCase(path)}</BreadcrumbPage>
+                      <BreadcrumbPage className="b">{getBreadcrumbLabel(path)}</BreadcrumbPage>
                     )}
                   </BreadcrumbItem>
                 </Fragment>
