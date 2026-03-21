@@ -7,15 +7,15 @@ export function Logo() {
   return (
     <Link
       href="/"
-      title={`${Settings.title} main logo`}
-      aria-label={`${Settings.title} main logo`}
+      title={`${Settings.title} логотип`}
+      aria-label={`${Settings.title} логотип`}
       className="flex items-center gap-2.5"
     >
       <Image
         src={Settings.siteicon}
-        alt={`${Settings.title} main logo`}
-        title={`${Settings.title} main logo`}
-        aria-label={`${Settings.title} main logo`}
+        alt={`${Settings.title} логотип`}
+        title={`${Settings.title} логотип`}
+        aria-label={`${Settings.title} логотип`}
         width={34}
         height={34}
         loading="lazy"
