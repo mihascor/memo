@@ -21,15 +21,36 @@ export default function FallingTitle({ text, className = '' }: FallingTitleProps
   return (
     <h1 className={className} aria-label={text}>
       {text.split('').map((letter, index) => (
+        // <span
+        //   key={index}
+        //   className={`inline-block ${started ? 'animate-fall' : 'opacity-0'}`}
+        //   style={{
+        //     animationDelay: `${index * 0.08}s`,
+        //     animationFillMode: 'both',
+        //   }}
+        // >
+        //   {letter === ' ' ? '\u00A0' : letter}
+        // </span>
         <span
           key={index}
-          className={`inline-block ${started ? 'animate-fall' : 'opacity-0'}`}
+          className={`relative inline-block ${started ? 'animate-fall' : 'opacity-0'}`}
           style={{
             animationDelay: `${index * 0.08}s`,
             animationFillMode: 'both',
           }}
         >
-          {letter === ' ' ? '\u00A0' : letter}
+          {/* тень */}
+          <span
+            // className="absolute left-[7px] -top-[5px] opacity-30 pointer-events-none text-primary"
+            className="absolute left-[7px] -top-[5px] opacity-40 pointer-events-none text-primary blur-[0.5px]"
+          >
+            {letter === ' ' ? '\u00A0' : letter}
+          </span>
+
+          {/* основная буква */}
+          <span className="relative">
+            {letter === ' ' ? '\u00A0' : letter}
+          </span>
         </span>
       ))}
     </h1>
