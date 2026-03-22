@@ -1,4 +1,4 @@
-export const url = 'https://rubix-documents.vercel.app'
+export const url = 'https://memo-xi-one.vercel.app/'
 export const siteicon = '/icon.png'
 
 export const gtm = 'GTM-XXXXXXX'
@@ -13,7 +13,7 @@ export const imagealt = 'mihascor'
 export const twitterhandle = ''
 
 export const companyname = 'mihascor'
-export const companylink = ''
+export const companylink = 'https://memo-xi-one.vercel.app/'
 
 export const branding = false
 export const rightsidebar = true
