@@ -1,14 +1,20 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type FallingTitleProps = {
   text: string
   className?: string
+  onComplete?: () => void
 }
 
-export default function FallingTitle({ text, className = '' }: FallingTitleProps) {
+export default function FallingTitle({
+  text,
+  className = '',
+  onComplete,
+}: FallingTitleProps) {
   const [started, setStarted] = useState(false)
+  const completedRef = useRef(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,19 +24,12 @@ export default function FallingTitle({ text, className = '' }: FallingTitleProps
     return () => clearTimeout(timer)
   }, [])
 
+  const letters = text.split('')
+  const lastIndex = letters.length - 1
+
   return (
     <h1 className={className} aria-label={text}>
-      {text.split('').map((letter, index) => (
-        // <span
-        //   key={index}
-        //   className={`inline-block ${started ? 'animate-fall' : 'opacity-0'}`}
-        //   style={{
-        //     animationDelay: `${index * 0.08}s`,
-        //     animationFillMode: 'both',
-        //   }}
-        // >
-        //   {letter === ' ' ? '\u00A0' : letter}
-        // </span>
+      {letters.map((letter, index) => (
         <span
           key={index}
           className={`relative inline-block ${started ? 'animate-fall' : 'opacity-0'}`}
@@ -38,19 +37,18 @@ export default function FallingTitle({ text, className = '' }: FallingTitleProps
             animationDelay: `${index * 0.08}s`,
             animationFillMode: 'both',
           }}
+          onAnimationEnd={() => {
+            if (index === lastIndex && !completedRef.current) {
+              completedRef.current = true
+              onComplete?.()
+            }
+          }}
         >
-          {/* тень */}
-          <span
-            // className="absolute left-[7px] -top-[5px] opacity-30 pointer-events-none text-primary"
-            className="absolute left-[7px] -top-[5px] opacity-40 pointer-events-none text-primary blur-[0.5px]"
-          >
+          <span className="absolute left-[7px] -top-[5px] pointer-events-none text-primary opacity-40 blur-[0.5px]">
             {letter === ' ' ? '\u00A0' : letter}
           </span>
 
-          {/* основная буква */}
-          <span className="relative">
-            {letter === ' ' ? '\u00A0' : letter}
-          </span>
+          <span className="relative">{letter === ' ' ? '\u00A0' : letter}</span>
         </span>
       ))}
     </h1>
