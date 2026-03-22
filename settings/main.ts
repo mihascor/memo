@@ -6,9 +6,9 @@ export const gtmconnected = false
 
 export const sitename = 'Памятка'
 export const description =
-  'Памятка для проживающих на планете Земля'
+  'Инструкция для проживающих на планете Земля. Небольшие хитрости для оптимального обустройства и комфорта.'
 export const keywords = ['Разум', 'Осознанность', 'Понимание', 'Принятие', 'mihascor']
-export const urlimage = '/images/og-image.png'
+export const urlimage = '/images/og-image_v2.png'
 export const imagealt = 'mihascor'
 export const twitterhandle = ''
 
