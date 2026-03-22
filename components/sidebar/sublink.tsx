@@ -12,9 +12,10 @@ function isRoute(item: Paths): item is Extract<Paths, { title: string; href: str
   return 'title' in item && 'href' in item
 }
 
+// Переключение открыть закрыть меню 
 export default function SubLink(props: Paths & { level: number; isSheet: boolean }) {
   const path = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   useEffect(() => {
     if (isRoute(props) && props.href && path !== props.href && path.includes(props.href)) {

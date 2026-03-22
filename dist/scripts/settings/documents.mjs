@@ -1,8 +1,8 @@
 export const Documents = [
     {
-        heading: 'Introduction',
+        heading: '',
         title: 'Вводная часть',
-        href: '/basic-setup',
+        href: '/introduction',
         items: [
             {
                 title: 'Installation',
@@ -21,12 +21,13 @@ export const Documents = [
     {
         spacer: true,
     },
+    // {
+    //   title: 'Navigation',
+    //   href: '/navigation',
+    //   heading: 'Главы',
+    // },
     {
-        title: 'Navigation',
-        href: '/navigation',
-        heading: 'Documents',
-    },
-    {
+        heading: 'Главы',
         title: 'Structure',
         href: '/structure',
         items: [

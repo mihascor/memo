@@ -9,7 +9,7 @@ export default function Home() {
       {/* <h1 className="mb-4 text-4xl font-bold sm:text-7xl">ПАМЯТКА</h1> */}
       <FallingTitle text="ПАМЯТКА" className="mb-4 text-4xl font-bold sm:text-7xl" />
       <p className="mb-8 max-w-150 text-foreground sm:text-base">
-        Памятка для проживающих на планете Земля
+        Инструкция для проживающих на планете Земля. Небольшие хитрости для оптимального обустройства и комфорта.
       </p>
 
       <div className="flex items-center gap-5">

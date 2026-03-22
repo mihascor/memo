@@ -14,6 +14,8 @@ import {
 import { PageRoutes } from '@/lib/pageroutes'
 import { toTitleCase } from '@/utils/toTitleCase'
 
+// Перевод хлебные крошки
+
 const breadcrumbLabels: Record<string, string> = {
   // Примеры. Потом заменишь на свои папки и свои русские названия.
   'introduction': 'Вводная часть',
