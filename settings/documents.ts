@@ -2,9 +2,9 @@ import { Paths } from '@/lib/pageroutes'
 
 export const Documents: Paths[] = [
   {
-    heading: 'Introduction',
+    heading: '',
     title: 'Вводная часть',
-    href: '/basic-setup',
+    href: '/introduction',
     items: [
       {
         title: 'Installation',
@@ -23,12 +23,13 @@ export const Documents: Paths[] = [
   {
     spacer: true,
   },
+  // {
+  //   title: 'Navigation',
+  //   href: '/navigation',
+  //   heading: 'Главы',
+  // },
   {
-    title: 'Navigation',
-    href: '/navigation',
-    heading: 'Documents',
-  },
-  {
+    heading: 'Главы',
     title: 'Structure',
     href: '/structure',
     items: [

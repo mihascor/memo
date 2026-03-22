@@ -328,3 +328,22 @@ span.katex-html {
 .dark .typography h4 {
   color: oklch(0.985 0 0); /* почти белый */
 }
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) rotate(-12deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) rotate(4deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.animate-fall {
+  animation: fall 0.7s ease-out;
+}

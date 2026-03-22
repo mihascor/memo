@@ -16,7 +16,7 @@ import { toTitleCase } from '@/utils/toTitleCase'
 
 const breadcrumbLabels: Record<string, string> = {
   // Примеры. Потом заменишь на свои папки и свои русские названия.
-  'basic-setup': 'Вводная часть',
+  'introduction': 'Вводная часть',
   'setup': 'Установка',
   'nastroika': 'Настройка',
   'struktura-saita': 'Структура сайта',
